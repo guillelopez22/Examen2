@@ -4,7 +4,7 @@
 #include "productos.h"
 #include "lujo.h"
 #include "alcoholicos.h"
-
+using std::vector;
 using std::cout;
 using std::cin;
 using std::endl;
