@@ -1,3 +1,4 @@
+#include "productos.h"
 #include "lujo.h"
 #include <string>
 #include <sstream>
@@ -8,7 +9,7 @@ using std::stringstream;
 Alcoholicos::Alcoholicos(double edilson_volumen, double edilson_peso, string edilson_cliente):Productos(edilson_volumen, edilson_peso, edilson_cliente) {
 }
 
-virtual strign Alcoholicos::toString()const {
+virtual string Alcoholicos::toString()const {
 	stringstream ss;
 	ss << Productos::toString() << ", Tasa: " << edilson_tasa;
 	return ss.str();

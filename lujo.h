@@ -2,6 +2,7 @@
 #define LUJO_H
 
 #include <string>
+#include "productos.h"
 
 using std::string;
 
