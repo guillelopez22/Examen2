@@ -7,14 +7,14 @@ using std::string;
 
 class Productos{
 string edilson_cliente;
-double edilson_volumen, edilson_peso,edilson_tasa;
+double edilson_volumen, edilson_peso;
 public:
-	Productos(double,double,string,double);
+	Productos(double,double,string);
 	virtual  string toString() const;
 	double getEdilson_volumen() const;
 	string getEdilson_cliente() const;
 	double getEdilson_peso() const;
-	double getEdilson_tasa() const;
+	//double getEdilson_tasa() const;
 	virtual double cobrarImpuesto()=0;
 	virtual int getId()=0;
 
