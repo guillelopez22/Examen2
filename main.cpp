@@ -34,9 +34,9 @@ int main(int argc, char *argv[])
     		break;
     	case 2:
     		switch(Edilson_PMenu()){
+    			double edilson_volumen, edilson_peso, edilson_precio;
+    			string edilson_cliente;
     			case 1:
-    				double edilson_volumen, edilson_peso, edilson_precio;
-    				string edilson_cliente;
     				cout << "Volumen: ";
     				cin >> edilson_volumen;
     				cout << "Peso: ";
@@ -47,8 +47,7 @@ int main(int argc, char *argv[])
     				cin >> edilson_precio;
     				break;
     			case 2:
-    				double edilson_volumen, edilson_peso, edilson_precio;
-    				string edilson_cliente;
+    				
     				cout << "Volumen: ";
     				cin >> edilson_volumen;
     				cout << "Peso: ";
@@ -59,8 +58,6 @@ int main(int argc, char *argv[])
     				cin >> edilson_precio;
     				break;
     			case 3:
-    				double edilson_volumen, edilson_peso, edilson_precio;
-    				string edilson_cliente;
     				cout << "Volumen: ";
     				cin >> edilson_volumen;
     				cout << "Peso: ";
