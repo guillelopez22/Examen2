@@ -6,7 +6,7 @@
 using std::string;
 using std::stringstream;
 
-Lujo::Lujo(double edilson_volumen, double edilson_peso, string edilson_cliente, double edilson_precio):Productos(edilson_volumen, edilson_peso, edilson_cliente, edilson_precio) {
+Lujo::Lujo(double edilson_volumen, double edilson_peso, string edilson_cliente, double edilson_precio, double edilson_tasa):Productos(edilson_volumen, edilson_peso, edilson_cliente, edilson_precio) {
 }
 
 virtual string Lujo::toString()const {

@@ -9,7 +9,7 @@ using std::string;
 class Lujo:public Productos {
 	double edilson_tasa;
 public:
-	Lujo(double, double, string, double);
+	Lujo(double, double, string, double, double);
 	virtual string toString()const;
 	virtual double cobrarImpuesto();
 	void setEdilson_tasa(double);
