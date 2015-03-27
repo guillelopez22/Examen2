@@ -3,11 +3,14 @@
 
 #include "productos.h"
 #include "educativos.h"
+#include <srtring>
+
+using std::string;
 
 class Educativos : public Productos{
 	double edilson_tasa;	
 public:
-	Educativos
+	Educativos(double,double,string,souble,double);
 	void setEdilson_tasa(double);
 	virtual string toString() const;
 	virtual double cobrarImpuesto();
