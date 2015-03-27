@@ -16,11 +16,13 @@ string createCliente();
 int Edilson_PMenu();
 string getCliente(vector<string>);
 void Edilson_Historial(vector<Productos*>);
-bool morazan;
-morazan = true;
+
+
 
 int main(int argc, char *argv[])
 {
+	bool morazanES_SEXY;
+	morazanES_SEXY = true;
 	int seguir=9;
     cout<<"¡Bienvenido Edilson!"<<endl;
 	vector<Productos*> productos;
