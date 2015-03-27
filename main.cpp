@@ -27,16 +27,17 @@ int main(int argc, char *argv[])
     cin >> edilson_delujo;
 
     switch(Edilson_Menu()){
-    	case 1:
+    	case 1:{
     		string edilson_nombre;
     		cout << "Ingrese el nombre del cliente: ";
     		cin >> edilson_nombre;
     		break;
+    	}
     	case 2:
     		switch(Edilson_PMenu()){
     			double edilson_volumen, edilson_peso, edilson_precio;
     			string edilson_cliente;
-    			case 1:
+    			case 1:{
     				cout << "Volumen: ";
     				cin >> edilson_volumen;
     				cout << "Peso: ";
@@ -46,7 +47,8 @@ int main(int argc, char *argv[])
     				cout << "Precio :";
     				cin >> edilson_precio;
     				break;
-    			case 2:
+    			}
+    			case 2:{
     				
     				cout << "Volumen: ";
     				cin >> edilson_volumen;
@@ -57,7 +59,8 @@ int main(int argc, char *argv[])
     				cout << "Precio :";
     				cin >> edilson_precio;
     				break;
-    			case 3:
+    			}
+    			case 3:{
     				cout << "Volumen: ";
     				cin >> edilson_volumen;
     				cout << "Peso: ";
@@ -67,6 +70,7 @@ int main(int argc, char *argv[])
     				cout << "Precio :";
     				cin >> edilson_precio;dg
     				break;
+    			}
     		}
     		break;
             case 3 : {
@@ -120,11 +124,11 @@ void Edilson_Historial(vector<Productos*> morazan_list){
     for(int i=0;i<morazan_list.size();i++){
         cout<<morazan_list->toString()<<endl;
         cout<<"Tipo de Producto : ";
-        if(morazan_list->getId()==1){
+        if(morazan_list.at(i).getId()==1){
             cout<<"Educativos"<<endl;
-        }else if(morazan_list->getId()==2){
+        }else if(morazan_list.at(i).getId()==2){
             cout<<"Alcoholicos"<<endl;
-        }else if(morazan_list->getId()==3){
+        }else if(morazan_list.at(i).getId()==3){
             cout<<"Lujo"<<endl;
         }
     }
