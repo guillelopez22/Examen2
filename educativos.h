@@ -10,7 +10,7 @@ using std::string;
 class Educativos : public Productos{
 	double edilson_tasa;	
 public:
-	Educativos(double,double,string,souble,double);
+	Educativos(double,double,string,double,double);
 	void setEdilson_tasa(double);
 	virtual string toString() const;
 	virtual double cobrarImpuesto();

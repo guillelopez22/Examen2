@@ -28,10 +28,6 @@ double Productos::getEdilson_peso() const{
 	return edilson_peso;
 }
 
-double Productos::getEdilson_tasa() const{
-	return edilson_tasa;
-}
-
 double getEdilson_precio()const{
 	return edilson_precio;
 }
