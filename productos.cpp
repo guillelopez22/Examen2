@@ -12,7 +12,7 @@ Productos::Productos(double edilson_volumen,double edilson_peso,string edilson_c
 
 string Productos::toString() const{
 	stringstream edilson_ss;
-	ss<<"Volumen: "<<edilson_volumen<<", Peso: "<<edilson_peso<<", Cliente: "<<edilson_cliente;
+	edilson_ss<<"Volumen: "<<edilson_volumen<<", Peso: "<<edilson_peso<<", Cliente: "<<edilson_cliente;
 	return edilson_ss.str();
 }
 
