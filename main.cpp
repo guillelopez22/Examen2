@@ -31,12 +31,12 @@ int main(int argc, char *argv[])
     		string edilson_nombre;
     		cout << "Ingrese el nombre del cliente: ";
     		cin >> edilson_nombre;
+    		}
     		break;
-    	}
-    	case 2:
+    	case 2:{
+    		double edilson_volumen, edilson_peso, edilson_precio;
+    		string edilson_cliente;
     		switch(Edilson_PMenu()){
-    			double edilson_volumen, edilson_peso, edilson_precio;
-    			string edilson_cliente;
     			case 1:{
     				cout << "Volumen: ";
     				cin >> edilson_volumen;
@@ -46,10 +46,10 @@ int main(int argc, char *argv[])
     				cin >> edilson_cliente;
     				cout << "Precio :";
     				cin >> edilson_precio;
-    				break;
     			}
+    				break;
+    			
     			case 2:{
-    				
     				cout << "Volumen: ";
     				cin >> edilson_volumen;
     				cout << "Peso: ";
@@ -58,8 +58,9 @@ int main(int argc, char *argv[])
     				cin >> edilson_cliente;
     				cout << "Precio :";
     				cin >> edilson_precio;
+    			}	
     				break;
-    			}
+    		
     			case 3:{
     				cout << "Volumen: ";
     				cin >> edilson_volumen;
@@ -68,13 +69,19 @@ int main(int argc, char *argv[])
     				cout << "Cliente: ";
     				cin >> edilson_cliente;
     				cout << "Precio :";
-    				cin >> edilson_precio;dg
+    				cin >> edilson_precio;
+    				}
+    				break;
+    			case 4:{
     				break;
     			}
+    			break;
+    			
     		}
+    	}
     		break;
             case 3 : {
-                Edilson_Historial(vector<Productos*> productos);
+                Edilson_Historial(productos);
             }
             break;
             case 4:{
@@ -109,7 +116,7 @@ int Edilson_PMenu(){
 	cout << "3. Productos de Lujo" << endl;
 	cout << "4. Salir" << endl;
 	cin >> edilson_temp;
-	while(edilson_temp<1 || edilson_temp>3){
+	while(edilson_temp<1 || edilson_temp>4){
 		cout << "Error, ingrese una opcion del menu..." << endl;
 		cout << "1. Productos educativos" << endl;
 		cout << "2. Productos alcoholicos" << endl;
