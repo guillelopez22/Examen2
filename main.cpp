@@ -122,13 +122,13 @@ int Edilson_PMenu(){
 
 void Edilson_Historial(vector<Productos*> morazan_list){
     for(int i=0;i<morazan_list.size();i++){
-        cout<<morazan_list->toString()<<endl;
+        cout<<morazan_list.at(i)->toString()<<endl;
         cout<<"Tipo de Producto : ";
-        if(morazan_list.at(i).getId()==1){
+        if(morazan_list.at(i)->getId()==1){
             cout<<"Educativos"<<endl;
-        }else if(morazan_list.at(i).getId()==2){
+        }else if(morazan_list.at(i)->getId()==2){
             cout<<"Alcoholicos"<<endl;
-        }else if(morazan_list.at(i).getId()==3){
+        }else if(morazan_list.at(i)->getId()==3){
             cout<<"Lujo"<<endl;
         }
     }

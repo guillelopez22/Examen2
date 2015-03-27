@@ -8,7 +8,7 @@ using std::stringstream;
 
 Educativos::Educativos(double edilson_volumen,double edilson_peso,string edilson_cliente,double edilson_precio,double edilson_tasa)
 : Productos(edilson_volumen,edilson_peso,edilson_cliente,edilson_precio){
-	setEdilson_tasa(edilson_tasa)
+	setEdilson_tasa(edilson_tasa);
 }
 void Educativos::setEdilson_tasa(double edilson_tasa){
 	this->edilson_tasa=edilson_tasa;

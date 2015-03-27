@@ -3,7 +3,7 @@
 
 #include "productos.h"
 #include "educativos.h"
-#include <srtring>
+#include <string>
 
 using std::string;
 
