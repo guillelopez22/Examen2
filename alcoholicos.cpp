@@ -6,7 +6,7 @@
 using std::string;
 using std::stringstream;
 
-Alcoholicos::Alcoholicos(double edilson_volumen, double edilson_peso, string edilson_cliente double edilson_tasa):Productos(edilson_volumen, edilson_peso, edilson_cliente) {
+Alcoholicos::Alcoholicos(double edilson_volumen, double edilson_peso, string edilson_cliente double edilson_tasa):Productos(edilson_volumen, edilson_peso, edilson_cliente, edilson_precio) {
 }
 
 virtual string Alcoholicos::toString()const {
