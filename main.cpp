@@ -92,18 +92,18 @@ int main(int argc, char *argv[])
 
 }
 
-int Menu(){
+int Edilson_Menu(){
 	int edilson_temp;
 	cout << "1. Agregar clientes " << endl;
 	cout << "2. Agregar productos " << endl;
-	cout << "3.Historial " << endl;
+	cout << "3. Historial " << endl;
     cout << "4. Salir" << endl;
 	cin >> edilson_temp;
 	while(edilson_temp<1 || edilson_temp>4){
 		cout << "Error, ingrese una opcion del menu..." << endl;
 		cout << "1. Agregar clientes " << endl;
 		cout << "2. Agregar productos " << endl;
-        cout << "3.Historial " << endl;
+        cout << "3. Historial " << endl;
 		cout << "4. Salir" << endl;
 		cin >> edilson_temp;
 	}
