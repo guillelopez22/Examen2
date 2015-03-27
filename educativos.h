@@ -4,9 +4,9 @@
 #include "productos.h"
 
 class Educativos : public Productos{
+	double edilson_tasa;	
 public:
-	double edilson_tasa;
-	double getEdilson_tasa();
+	double setEdilson_tasa(double);
 	virtual string toString() const;
 	virtual double cobrarImpuesto();
 	virtual int getId();
