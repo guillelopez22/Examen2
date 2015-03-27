@@ -3,11 +3,10 @@
 
 using std::stringstream;
 
-Productos::Productos(double edilson_volumen,double edilson_peso,string edilson_cliente, double edilson_tasa){
+Productos::Productos(double edilson_volumen,double edilson_peso,string edilson_cliente){
 	this->edilson_volumen=edilson_volumen;
 	this->edilson_peso=edilson_peso;
 	this->edilson_cliente=edilson_cliente;
-	this->edilson_tasa=edilson_tasa;
 }
 
 string Productos::toString() const{
