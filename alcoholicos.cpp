@@ -2,12 +2,16 @@
 #include <string>
 #include <sstream>
 
+using std::string;
+using std::stringstream;
+
 Alcoholicos::Alcoholicos(double edilson_volumen, double edilson_peso, string edilson_cliente):Productos(edilson_volumen, edilson_peso, edilson_cliente) {
 }
 
 virtual strign Alcoholicos::toString()const {
 	stringstream ss;
 	ss << Productos::toString() << ", Tasa: " << edilson_tasa;
+	return ss.str();
 }
 
 virtual double Alcoholicos::cobrarImpuesto() {

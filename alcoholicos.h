@@ -9,7 +9,7 @@ class Alcoholicos:public Productos {
 	double edilson_tasa;
 public:
 	Alcoholicos(double, double, string, double);
-	virtual strign toString()const;
+	virtual string toString()const;
 	virtual double cobrarImpuesto();
 	virtual int getId();
 };

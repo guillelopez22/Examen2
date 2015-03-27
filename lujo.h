@@ -9,7 +9,7 @@ class Lujo:public Productos {
 	double edilson_tasa;
 public:
 	Lujo(double, double, string, double);
-	virtual strign toString()const;
+	virtual string toString()const;
 	virtual double cobrarImpuesto();
 	virtual int getId();
 };
