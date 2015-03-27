@@ -15,7 +15,7 @@ void Educativos::setEdilson_tasa(double edilson_tasa){
 }
 string Educativos::toString() const{
 	stringstream ss;
-	ss<<Productos::toString()<<", Tasa: "<<edilson_tasa;
+	ss<<Productos::toString()<<", Impuesto Tipo de Lujo, Tasa: "<<edilson_tasa;
 	return ss.str();
 }
 double Educativos::cobrarImpuesto(){

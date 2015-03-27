@@ -11,7 +11,7 @@ Lujo::Lujo(double edilson_volumen, double edilson_peso, string edilson_cliente, 
 
 string Lujo::toString()const {
 	stringstream ss;
-	ss << Productos::toString() << ", Tasa: " << edilson_tasa;
+	ss << Productos::toString() << ", Impuesto Tipo de Lujo, Tasa: " << edilson_tasa;
 	return ss.str();
 }
 
