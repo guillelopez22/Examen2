@@ -16,7 +16,7 @@ virtual string Alcoholicos::toString()const {
 }
 
 virtual double Alcoholicos::cobrarImpuesto() {
-	return (this->edilson_peso*this->edilson_tasa + this->edilson_volumen*this->edilson_tasa);
+	return ((this->edilson_peso + this->edilson_volumen) * this->edilson_tasa);
 }
 
 void Alcoholicos::setEdilson_tasa(double edilson_tasa) {
