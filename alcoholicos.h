@@ -12,6 +12,7 @@ public:
 	Alcoholicos(double, double, string, double);
 	virtual string toString()const;
 	virtual double cobrarImpuesto();
+	void setEdilson_tasa(double);
 	virtual int getId();
 };
 

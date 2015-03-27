@@ -6,7 +6,7 @@
 using std::string;
 using std::stringstream;
 
-Lujo::Lujo(double edilson_volumen, double edilson_peso, string edilson_cliente):Productos(edilson_volumen, edilson_peso, edilson_cliente) {
+Lujo::Lujo(double edilson_volumen, double edilson_peso, string edilson_cliente, double edilson_precio):Productos(edilson_volumen, edilson_peso, edilson_cliente, edilson_precio) {
 }
 
 virtual string Lujo::toString()const {
@@ -17,6 +17,10 @@ virtual string Lujo::toString()const {
 
 virtual double Lujo::cobrarImpuesto() {
 	return (this->edilson_peso*this->edilson_tasa + this->edilson_volumen*this->edilson_tasa);
+}
+
+void Lujo::setEdilson_tasa(double edilson_tasa) {
+	this->edilson_tasa = edilson_tasa;
 }
 
 virtual int Lujo::getId() {
