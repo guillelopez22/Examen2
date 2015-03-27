@@ -16,6 +16,8 @@ string createCliente();
 int Edilson_PMenu();
 string getCliente(vector<string>);
 void Edilson_Historial(vector<Productos*>);
+bool morazan;
+morazan = true;
 
 int main(int argc, char *argv[])
 {
@@ -67,7 +69,7 @@ int main(int argc, char *argv[])
 	    				edilson_cliente = getCliente(clientes);
 	    				cout << "Precio :";
 	    				cin >> edilson_precio;
-	    				productos.push_back(new Alcoholicos(edilson_volumen, edilson_peso, edilson_cliente, edilson_precio, edilson_educativo));
+	    				productos.push_back(new Alcoholicos(edilson_volumen, edilson_peso, edilson_cliente, edilson_precio, edilson_alcoholico));
 	    			}	
 	    				break;
 	    		
@@ -79,7 +81,7 @@ int main(int argc, char *argv[])
 	    				edilson_cliente = getCliente(clientes);
 	    				cout << "Precio :";
 	    				cin >> edilson_precio;
-	    				productos.push_back(new Lujo(edilson_volumen, edilson_peso, edilson_cliente, edilson_precio, edilson_educativo));
+	    				productos.push_back(new Lujo(edilson_volumen, edilson_peso, edilson_cliente, edilson_precio, edilson_delujo));
 	    				}
 	    				break;
 	    			case 4:{
