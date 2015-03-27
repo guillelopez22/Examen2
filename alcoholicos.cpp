@@ -17,13 +17,13 @@ string Alcoholicos::toString()const {
 }
 
 double Alcoholicos::cobrarImpuesto() {
-	return ((this->edilson_peso + this->edilson_volumen) * this->edilson_tasa);
+	return ((Productos::getEdilson_peso() + Productos::getEdilson_volumen()) * this->edilson_tasa);
 }
 
 void Alcoholicos::setEdilson_tasa(double edilson_tasa) {
 	this->edilson_tasa = edilson_tasa;
 }
 
-virtual int Alcoholicos::getId() {
+int Alcoholicos::getId() {
 	return 2;
 }

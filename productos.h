@@ -15,7 +15,6 @@ public:
 	string getEdilson_cliente() const;
 	double getEdilson_peso() const;
 	double getEdilson_precio()const;
-	//double getEdilson_tasa() const;
 	virtual double cobrarImpuesto()=0;
 	virtual int getId()=0;
 

@@ -16,7 +16,7 @@ virtual string Lujo::toString()const {
 }
 
 virtual double Lujo::cobrarImpuesto() {
-	return (this->edilson_peso*this->edilson_tasa + this->edilson_volumen*this->edilson_tasa);
+	return ((Productos::getEdilson_peso()*this->edilson_tasa + Productos::getEdilson_volumen())*this->edilson_tasa);
 }
 
 void Lujo::setEdilson_tasa(double edilson_tasa) {
